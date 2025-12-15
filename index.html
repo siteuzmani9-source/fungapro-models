@@ -1,90 +1,379 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Funga Pro Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#1f7a3a" />
+  <title>Privacy Policy – Funga Pro</title>
+  <style>
+    :root{
+      --bg:#f4f7ec;
+      --card:#ffffff;
+      --text:#1b2b1f;
+      --muted:#53635a;
+      --brand:#1f7a3a;
+      --border:#e5eadf;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 50% 0%, #e7f3e0 0%, var(--bg) 55%, #ffffff 100%);
+      line-height:1.6;
+    }
+    header{
+      padding:28px 18px 12px;
+      max-width: 980px;
+      margin:0 auto;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo{
+      width:44px;height:44px;
+      border-radius:14px;
+      background:var(--brand);
+      display:grid;place-items:center;
+      box-shadow: var(--shadow);
+      flex:0 0 auto;
+    }
+    .logo svg{width:22px;height:22px;fill:#fff}
+    .title-wrap h1{
+      font-size:20px;margin:0;
+      letter-spacing:.2px;
+    }
+    .title-wrap p{
+      margin:2px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .toolbar{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .chip{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.8);
+      backdrop-filter: blur(6px);
+      border-radius:999px;
+      padding:8px 10px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.04);
+    }
+    select{
+      border:0;
+      background:transparent;
+      font-size:14px;
+      outline:none;
+      color:var(--text);
+      cursor:pointer;
+    }
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 18px 48px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 20px;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin: 10px 0 18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .badge{
+      border:1px solid var(--border);
+      background:#f7fbf1;
+      padding:6px 10px;
+      border-radius:999px;
+    }
+    h2{
+      margin: 22px 0 8px;
+      font-size:17px;
+      color: var(--brand);
+    }
+    h3{
+      margin: 14px 0 6px;
+      font-size:15px;
+    }
+    p{margin: 8px 0}
+    ul{
+      margin: 8px 0 8px 18px;
+      padding:0;
+    }
+    li{margin: 6px 0}
+    .divider{
+      height:1px;background:var(--border);
+      margin: 18px 0;
+    }
+    footer{
+      max-width:980px;
+      margin: 0 auto;
+      padding: 0 18px 28px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align:center;
+    }
+    .lang{display:none;}
+    .lang.active{display:block;}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    @media (min-width: 720px){
+      .card{padding: 26px 28px}
+      .title-wrap h1{font-size:22px}
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px;">
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2c-4.4 0-8 3.6-8 8 0 3.9 2.8 7.2 6.6 7.9L9.2 22l3.7-2 3.7 2-1.4-4.1C19.2 17.2 22 13.9 22 10c0-4.4-3.6-8-10-8Zm3.2 14.2-1.1.3.4 1.1-2.5-1.4-2.5 1.4.4-1.1-1.1-.3C6.1 15.6 5 13.9 5 12c0-3.3 2.7-6 7-6s7 2.7 7 6c0 1.9-1.1 3.6-2.8 4.2Z"/>
+        </svg>
+      </div>
+      <div class="title-wrap">
+        <h1>Funga Pro — Privacy Policy</h1>
+        <p>Readable single-page policy (TR / EN)</p>
+      </div>
+    </div>
 
-🔒 Gizlilik Politikası – Funga Pro
+    <div class="toolbar">
+      <div class="chip" title="Language">
+        <span aria-hidden="true">🌐</span>
+        <label for="langSelect" style="font-size:14px;color:var(--muted)">Dil / Language</label>
+        <select id="langSelect">
+          <option value="tr" selected>Türkçe</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
 
-Son güncelleme: Aralık 2025
+  <main>
+    <div class="card">
+      <!-- TR -->
+      <section class="lang active" id="lang-tr">
+        <div class="meta">
+          <span class="badge"><strong>Gizlilik Politikası</strong> – Funga Pro</span>
+          <span class="badge">Son güncelleme: <strong>Aralık 2025</strong></span>
+        </div>
 
-Funga Pro (“biz”, “bizim”, “uygulama”) gizliliğinize saygı gösterir. Bu Gizlilik Politikası, Funga Pro mobil uygulamasını kullandığınızda bilgilerin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.
+        <p>
+          Funga Pro ("biz", "bizim", "uygulama") gizliliğinize saygı gösterir.
+          Bu Gizlilik Politikası, Funga Pro mobil uygulamasını kullandığınızda bilgilerin nasıl toplandığını,
+          kullanıldığını ve korunduğunu açıklar.
+        </p>
 
-1. Uygulamanın Amacı
+        <h2>1. Uygulamanın Amacı</h2>
+        <p>
+          Funga Pro, yapay zekâ kullanarak mantar görüntülerini analiz eden <strong>eğitim amaçlı</strong> bir uygulamadır.
+          Uygulama <strong>tıbbi, sağlık veya güvenlik tavsiyesi sunmaz</strong>.
+        </p>
 
-Funga Pro, yapay zekâ kullanarak mantar görüntülerini analiz eden eğitim amaçlı bir uygulamadır.
-Uygulama tıbbi, sağlık veya güvenlik tavsiyesi sunmaz.
+        <h2>2. Topladığımız Bilgiler</h2>
 
-2. Topladığımız Bilgiler
-a) Fotoğraflar
+        <h3>a) Fotoğraflar</h3>
+        <ul>
+          <li>Fotoğraflar yalnızca kullanıcı açıkça taramayı seçtiğinde çekilir.</li>
+          <li>Görüntüler analiz için <strong>geçici olarak</strong> bir yapay zekâ servisine gönderilir.</li>
+          <li>Fotoğraflar sunucularımızda <strong>kalıcı olarak saklanmaz</strong>.</li>
+        </ul>
 
-Fotoğraflar yalnızca kullanıcı açıkça taramayı seçtiğinde çekilir.
+        <h3>b) Konum (İsteğe Bağlı)</h3>
+        <ul>
+          <li>Konum verileri yalnızca <strong>kullanıcı izniyle</strong> toplanır.</li>
+          <li>Yalnızca harita üzerinde <strong>yakınlardaki mantar tarama noktalarını göstermek</strong> için kullanılır.</li>
+          <li>Konum verileri <strong>üçüncü taraflarla paylaşılmaz</strong>.</li>
+        </ul>
 
-Görüntüler analiz için geçici olarak bir yapay zekâ servisine gönderilir.
+        <h3>c) Tarama Geçmişi</h3>
+        <p>Aşağıdaki bilgiler saklanabilir:</p>
+        <ul>
+          <li>Tarama sonucu (tahmin edilen sınıf)</li>
+          <li>Güven puanı</li>
+          <li>Zaman damgası</li>
+          <li>İsteğe bağlı konum verileri (izin verilmişse)</li>
+        </ul>
+        <p>Bu veriler <strong>Firebase hizmetleri</strong> kullanılarak güvenli şekilde saklanır.</p>
 
-Fotoğraflar sunucularımızda kalıcı olarak saklanmaz.
+        <h2>3. Veri Kullanımı</h2>
+        <p>
+          Toplanan veriler yalnızca <strong>uygulama işlevselliğini sağlamak</strong> ve <strong>eğitim amaçları</strong> için kullanılır.
+        </p>
 
-b) Konum (İsteğe Bağlı)
+        <h2>4. Veri Paylaşımı</h2>
+        <p>
+          Kullanıcı verilerini <strong>satmıyor</strong>, <strong>kiralamıyor</strong> veya <strong>üçüncü taraflarla paylaşmıyoruz</strong>.
+        </p>
+        <p>Kullanılan üçüncü taraf hizmetler:</p>
+        <ul>
+          <li><strong>Firebase</strong> (veri depolama ve güvenlik)</li>
+          <li><strong>Yapay zekâ çıkarımı servisi</strong> (yalnızca görüntü analizi için)</li>
+        </ul>
 
-Konum verileri yalnızca kullanıcı izniyle toplanır.
+        <h2>5. Veri Saklama</h2>
+        <p>
+          Tarama geçmişi verileri, yalnızca uygulama işlevselliğini sağlamak için gerekli olduğu sürece saklanır.
+          Kullanıcılar, veri toplamayı durdurmak için uygulamayı istedikleri zaman kaldırabilirler.
+        </p>
 
-Yalnızca harita üzerinde yakınlardaki mantar tarama noktalarını göstermek için kullanılır.
+        <h2>6. Veri Güvenliği</h2>
+        <p>
+          Kullanıcı verilerini korumak için <strong>Firebase güvenlik mekanizmaları</strong> ve sektör standartlarına uygun teknik önlemler kullanılır.
+        </p>
 
-Konum verileri üçüncü taraflarla paylaşılmaz.
+        <h2>7. Çocukların Gizliliği</h2>
+        <p>
+          Funga Pro, <strong>13 yaş altı çocuklar için tasarlanmamıştır</strong> ve çocuklardan bilerek kişisel veri toplamaz.
+        </p>
 
-c) Tarama Geçmişi
+        <h2>8. Feragatname</h2>
+        <p>
+          Yapay zekâ tabanlı sonuçların doğruluğu garanti edilmez.
+          Bu uygulama üzerinden <strong>asla mantar tüketmeyin</strong>.
+          Her zaman yerel bir uzmana veya yetkili kuruma danışın.
+        </p>
 
-Aşağıdaki bilgiler saklanabilir:
+        <h2>9. İletişim</h2>
+        <p>
+          E-posta: <a href="mailto:siteuzmani9@gmail.com">siteuzmani9@gmail.com</a>
+        </p>
+      </section>
 
-Tarama sonucu (tahmin edilen sınıf)
+      <!-- EN -->
+      <section class="lang" id="lang-en">
+        <div class="meta">
+          <span class="badge"><strong>Privacy Policy</strong> – Funga Pro</span>
+          <span class="badge">Last updated: <strong>December 2025</strong></span>
+        </div>
 
-Güven puanı
+        <p>
+          Funga Pro (“we”, “our”, “the app”) respects your privacy. This Privacy Policy explains how information is collected,
+          used, and protected when you use the Funga Pro mobile application.
+        </p>
 
-Zaman damgası
+        <h2>1. Purpose of the App</h2>
+        <p>
+          Funga Pro is an <strong>educational</strong> application that analyzes mushroom images using artificial intelligence.
+          The app does <strong>not</strong> provide medical, health, or safety advice.
+        </p>
 
-İsteğe bağlı konum verileri (izin verilmişse)
+        <h2>2. Information We Collect</h2>
 
-Bu veriler Firebase hizmetleri kullanılarak güvenli şekilde saklanır.
+        <h3>a) Photos</h3>
+        <ul>
+          <li>Photos are taken only when the user chooses to scan.</li>
+          <li>Images are sent <strong>temporarily</strong> to an AI service for analysis.</li>
+          <li>Photos are <strong>not</strong> permanently stored on our servers.</li>
+        </ul>
 
-3. Veri Kullanımı
+        <h3>b) Location (Optional)</h3>
+        <ul>
+          <li>Collected only with user permission.</li>
+          <li>Used only to show nearby mushroom scan points on the map.</li>
+          <li>Location data is not shared with third parties.</li>
+        </ul>
 
-Toplanan veriler yalnızca uygulama işlevselliğini sağlamak ve eğitim amaçları için kullanılır.
+        <h3>c) Scan History</h3>
+        <p>The following may be stored:</p>
+        <ul>
+          <li>Scan result (predicted class)</li>
+          <li>Confidence score</li>
+          <li>Timestamp</li>
+          <li>Optional location data (if permission is granted)</li>
+        </ul>
+        <p>Data is stored securely using <strong>Firebase</strong>.</p>
 
-4. Veri Paylaşımı
+        <h2>3. Data Usage</h2>
+        <p>Data is used only for app functionality and educational purposes.</p>
 
-Kullanıcı verilerini satmıyor, kiralamıyor veya üçüncü taraflarla paylaşmıyoruz.
+        <h2>4. Data Sharing</h2>
+        <p>We do not sell, rent, or share user data with third parties.</p>
+        <p>Third-party services used:</p>
+        <ul>
+          <li><strong>Firebase</strong> (storage and security)</li>
+          <li><strong>AI inference service</strong> (image analysis only)</li>
+        </ul>
 
-Uygulamada kullanılan üçüncü taraf hizmetler:
+        <h2>5. Data Retention</h2>
+        <p>
+          Scan history data is retained only as long as necessary to provide app functionality.
+          Users can stop data collection by uninstalling the app at any time.
+        </p>
 
-Firebase (veri depolama ve güvenlik)
+        <h2>6. Data Security</h2>
+        <p>Data is protected using Firebase security mechanisms and industry-standard safeguards.</p>
 
-Yapay zekâ çıkarımı servisi (yalnızca görüntü analizi için)
+        <h2>7. Children’s Privacy</h2>
+        <p>This app is not designed for children under 13 and does not knowingly collect personal data from children.</p>
 
-5. Veri Saklama
+        <h2>8. Disclaimer</h2>
+        <p>
+          Results are not guaranteed to be accurate. Never consume mushrooms based on this app.
+          Always consult a local expert or an authorised institution.
+        </p>
 
-Tarama geçmişi verileri, yalnızca uygulama işlevselliğini sağlamak için gerekli olduğu sürece saklanır.
-Kullanıcılar, veri toplamayı durdurmak için uygulamayı istedikleri zaman kaldırabilirler.
+        <h2>9. Contact</h2>
+        <p>Email: <a href="mailto:siteuzmani9@gmail.com">siteuzmani9@gmail.com</a></p>
+      </section>
 
-6. Veri Güvenliği
+      <div class="divider"></div>
+      <p style="margin:0;color:var(--muted);font-size:12px">
+        This page is intended to be used as the official Privacy Policy URL for Google Play / App Store listings.
+      </p>
+    </div>
+  </main>
 
-Kullanıcı verilerini korumak için Firebase güvenlik mekanizmaları ve sektör standartlarına uygun teknik önlemler kullanılır.
+  <footer>
+    © <span id="year"></span> Funga Pro · <span style="opacity:.75">Privacy Policy</span>
+  </footer>
 
-7. Çocukların Gizliliği
+  <script>
+    const yearEl = document.getElementById('year');
+    yearEl.textContent = new Date().getFullYear();
 
-Funga Pro, 13 yaş altı çocuklar için tasarlanmamıştır ve çocuklardan bilerek kişisel veri toplamaz.
+    const select = document.getElementById('langSelect');
+    const tr = document.getElementById('lang-tr');
+    const en = document.getElementById('lang-en');
 
-8. Feragatname
-
-Yapay zekâ tabanlı sonuçların doğruluğu garanti edilmez.
-Bu uygulama üzerinden asla mantar tüketmeyin.
-Her zaman yerel bir uzmana veya yetkili kuruma danışın.
-
-9. İletişim
-
-📧 E-posta: siteuzmani9@gmail.com
-
-
+    function setLang(lang){
+      if(lang === 'en'){
+        tr.classList.remove('active');
+        en.classList.add('active');
+        document.documentElement.lang = 'en';
+        document.title = 'Privacy Policy – Funga Pro';
+      }else{
+        en.classList.remove('active');
+        tr.classList.add('active');
+        document.documentElement.lang = 'tr';
+        document.title = 'Gizlilik Politikası – Funga Pro';
+      }
+    }
+    select.addEventListener('change', (e)=> setLang(e.target.value));
+    setLang(select.value);
+  </script>
+</body>
 </html>
